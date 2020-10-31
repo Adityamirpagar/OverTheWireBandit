@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Over the Wire" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1604117783" ts_lastsave="1604130179">
+    <rich_text>Colour code in this file 
+</rich_text>
+    <rich_text foreground="#ffffffff0000">yellow is for Comments</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#ffffffff0000"># Connetcting lab over SSH 
+
+# Host: bandit.labs.overthewire.org
+# Port: 2220 </rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#ffffffff0000"># eg:</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ffff00000000">root@kali</rich_text>
+    <rich_text>:</rich_text>
+    <rich_text foreground="#0000ffff0000">~</rich_text>
+    <rich_text foreground="#00000000ffff">#</rich_text>
+    <rich_text> ssh &lt;Login UserName&gt;@bandit.labs.overthewire.org -p 2220
+
+</rich_text>
+    <rich_text foreground="#ffffffff0000"># whrere -p is the switch of port in ssh.</rich_text>
+    <rich_text>
+
+==================================Level 0======================================
+
+</rich_text>
+    <rich_text foreground="#ffffffff0000">#username: bandit0 
+#password: bandt0</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#ffffffff0000"># connnecting bandit lab over ssh (User Name and password are already given)</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#ffff00000000">root@kali</rich_text>
+    <rich_text>:</rich_text>
+    <rich_text foreground="#0000ffff0000">~</rich_text>
+    <rich_text foreground="#00000000ffff">#</rich_text>
+    <rich_text> ssh bandit0@bandit.labs.overthewire.org -p 2220 
+This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
+
+bandit0@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  www. `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (https://github.com/hugsy/gef) in /usr/local/gef/
+    * pwndbg (https://github.com/pwndbg/pwndbg) in /usr/local/pwndbg/
+    * peda (https://github.com/longld/peda.git) in /usr/local/peda/
+    * gdbinit (https://github.com/gdbinit/Gdbinit) in /usr/local/gdbinit/
+    * pwntools (https://github.com/Gallopsled/pwntools)
+    * radare2 (http://www.radare.org/)
+    * checksec.sh (http://www.trapkit.de/tools/checksec.html) in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  http://www.overthewire.org/wargames/
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+  
+</rich_text>
+    <rich_text foreground="#ffff00000000">$ </rich_text>
+    <rich_text foreground="#0000ffff0000">bandit0@bandit</rich_text>
+    <rich_text>:</rich_text>
+    <rich_text foreground="#0000ffff0000">~</rich_text>
+    <rich_text foreground="#ffff00000000">$ </rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#ffffffff0000"># We are successfully Login as bandit0 </rich_text>
+    <rich_text>
+
+=================================== Level 1 ============================================
+
+</rich_text>
+    <rich_text foreground="#ffffffff0000"># Now task is to find a fle "readme", it contains the password for our second login "bandit1"</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#ffff00000000">$</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#0000ffff0000">bandit0@bandit</rich_text>
+    <rich_text>:</rich_text>
+    <rich_text foreground="#0000ffff0000">~</rich_text>
+    <rich_text foreground="#ffff00000000">$ </rich_text>
+    <rich_text>ls -a
+.  ..  .bash_logout  .bashrc  .profile  readme</rich_text>
+    <rich_text foreground="#ffff00000000">
+
+$</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#0000ffff0000">bandit0@bandit</rich_text>
+    <rich_text foreground="#ffffffffffff">:</rich_text>
+    <rich_text foreground="#0000ffff0000">~</rich_text>
+    <rich_text foreground="#ffff00000000">$ </rich_text>
+    <rich_text>cat readme
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+</rich_text>
+    <rich_text foreground="#ffffffff0000">#</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#ffffffff0000">Got the password for "bandit1" </rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#ffff00000000">$</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#0000ffff0000">bandit0@bandit</rich_text>
+    <rich_text foreground="#ffffffffffff">:</rich_text>
+    <rich_text foreground="#0000ffff0000">~</rich_text>
+    <rich_text foreground="#ffff00000000">$</rich_text>
+    <rich_text> ssh bandit1@bandit.labs.overthewire.org -p 2220 
+
+</rich_text>
+    <node name="Level0-Level1" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604119008" ts_lastsave="1604122638">
+      <rich_text>==================================Level 0======================================
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#username: bandit0 
+#password: bandt0</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000"># connnecting bandit lab over ssh (User Name and password are already given)</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Log in as “bandit0”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> ssh bandit0@bandit.labs.overthewire.org -p 2220 
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit0@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www">www</rich_text>
+      <rich_text>. `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef ( </rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef">https://github.com/hugsy/gef</rich_text>
+      <rich_text> ) in /usr/local/gef/
+    * pwndbg ( </rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg">https://github.com/pwndbg/pwndbg</rich_text>
+      <rich_text> ) in /usr/local/pwndbg/
+    * peda ( </rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git">https://github.com/longld/peda.git</rich_text>
+      <rich_text> ) in /usr/local/peda/
+    * gdbinit ( </rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit">https://github.com/gdbinit/Gdbinit</rich_text>
+      <rich_text> ) in /usr/local/gdbinit/
+    * pwntools ( </rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools">https://github.com/Gallopsled/pwntools</rich_text>
+      <rich_text> )
+    * radare2 ( </rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text> 
+    * checksec.sh ( </rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text>  in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+ </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/"> http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+  
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit0@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000"># We are successfully Login as bandit0 </rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffffffff0000"># Now task is to find a fle "readme", it contains the password for user "bandit1"</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit0@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text>ls -a
+.  ..  .bash_logout  .bashrc  .profile  readme</rich_text>
+      <rich_text foreground="#ffff00000000">
+
+$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit0@bandit</rich_text>
+      <rich_text foreground="#ffffffffffff">:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text>cat readme
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#ffffffff0000">Got the password for "bandit1" </rich_text>
+      <rich_text>
+
+</rich_text>
+    </node>
+    <node name="Level 1-Level2" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604119050" ts_lastsave="1604122822">
+      <rich_text>============================== Level 1==========================================
+</rich_text>
+      <rich_text foreground="#ffffffff0000"># Log in as “bandit1”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> ssh bandit1@bandit.labs.overthewire.org -p 2220 
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit1@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www.">www.</rich_text>
+      <rich_text> `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (</rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef)">https://github.com/hugsy/gef)</rich_text>
+      <rich_text> in /usr/local/gef/
+    * pwndbg (</rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg)">https://github.com/pwndbg/pwndbg)</rich_text>
+      <rich_text> in /usr/local/pwndbg/
+    * peda (</rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git)">https://github.com/longld/peda.git)</rich_text>
+      <rich_text> in /usr/local/peda/
+    * gdbinit (</rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit)">https://github.com/gdbinit/Gdbinit)</rich_text>
+      <rich_text> in /usr/local/gdbinit/
+    * pwntools (</rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools)">https://github.com/Gallopsled/pwntools)</rich_text>
+      <rich_text>
+    * radare2 (</rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text>
+    * checksec.sh (</rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text> in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/">http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+  
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit1@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> 
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We are successfully login as bandit1</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Task is to find a file named “-” in the home directory, which contains password for user “bandit2”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit1@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text>ls
+ - 
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit1@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> cat -
+^C
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Here we have a dashed file, the problem with the dashed filesystem is that the shell commands takes “-” as an argument so, it will not able to run it. To run the command (in this case “-”) We've to execute the file</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#ffffffff0000">as a shell programe using “./”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit1@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> cat ./-
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We now have now password for “bandit2</rich_text>
+      <rich_text>”
+
+
+
+</rich_text>
+    </node>
+    <node name="Level2- Level3" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604122166" ts_lastsave="1604125342">
+      <rich_text>====================================Level3=====================================
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Log in as “bandit2”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> shh bandit2@bandit.labs.overtherwire.org -p 2220
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit2@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www.">www.</rich_text>
+      <rich_text> `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (</rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef)">https://github.com/hugsy/gef)</rich_text>
+      <rich_text> in /usr/local/gef/
+    * pwndbg (</rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg)">https://github.com/pwndbg/pwndbg)</rich_text>
+      <rich_text> in /usr/local/pwndbg/
+    * peda (</rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git)">https://github.com/longld/peda.git)</rich_text>
+      <rich_text> in /usr/local/peda/
+    * gdbinit (</rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit)">https://github.com/gdbinit/Gdbinit)</rich_text>
+      <rich_text> in /usr/local/gdbinit/
+    * pwntools (</rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools)">https://github.com/Gallopsled/pwntools)</rich_text>
+      <rich_text>
+    * radare2 (</rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text>
+    * checksec.sh (</rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text> in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/">http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text foreground="#0000ffff0000">bandit2@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We are successfully Login as "bandit2"</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Task is to find “spaces in this filename”, which contains the password for user “bandit3”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text foreground="#0000ffff0000">bandit2@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text>ls -a
+.  ..  .bash_logout  .bashrc  .profile  spaces in this filename
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text foreground="#0000ffff0000">bandit2@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> cat spaces in this filename
+cat: spaces: No such file or directory
+cat: in: No such file or directory
+cat: this: No such file or directory
+cat: filename: No such file or directory
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Here we have another issue, that the name of given file consist of spaces (blank). And as we know that the linux is case sensitive, so it will treat spaces as seperation between two file. For Overcome this We'll use ( </rich_text>
+      <rich_text background="#ffff00000000" foreground="#ffffffff0000">cat ‘spaces in this filename’</rich_text>
+      <rich_text foreground="#ffffffff0000"> )
+including inner inverted commas.</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text foreground="#0000ffff0000">bandit2@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> cat ‘spaces in this filename’
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We got the password for user “bandit3”</rich_text>
+      <rich_text>
+
+</rich_text>
+    </node>
+    <node name="Level3-Level4" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604125435" ts_lastsave="1604126880">
+      <rich_text>=================================Level 4=======================================
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#login as “badit3”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> ssh bandit3@bandit.labs.overthewire.org -p 2220 
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit3@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www.">www.</rich_text>
+      <rich_text> `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (</rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef)">https://github.com/hugsy/gef)</rich_text>
+      <rich_text> in /usr/local/gef/
+    * pwndbg (</rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg)">https://github.com/pwndbg/pwndbg)</rich_text>
+      <rich_text> in /usr/local/pwndbg/
+    * peda (</rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git)">https://github.com/longld/peda.git)</rich_text>
+      <rich_text> in /usr/local/peda/
+    * gdbinit (</rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit)">https://github.com/gdbinit/Gdbinit)</rich_text>
+      <rich_text> in /usr/local/gdbinit/
+    * pwntools (</rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools)">https://github.com/Gallopsled/pwntools)</rich_text>
+      <rich_text>
+    * radare2 (</rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text>
+    * checksec.sh (</rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text> in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/">http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit3@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$   
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000"># We are successfully login as “bandit3”</rich_text>
+      <rich_text foreground="#ffff00000000"> </rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Task is to find a hidden file in the “inhere” directory. The hidden file contains the pass for user “bandit4”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit3@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> ls
+</rich_text>
+      <rich_text background="#1a1a1a1a1a1a" foreground="#0000851effff">inhere</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit3@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> cd inhere
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit3@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000851effff">~/inhere</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> ls
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit3@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000851effff">~/inhere</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>
+
+#As we know that the file is hidden in the “inhere” directory, to reaveal the file we'll use “-a” switch to reveal the hidden content in the file. 
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit3@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000851effff">~/inhere</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> ls -a 
+.  ..  .hidden
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit3@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000851effff">~/inhere</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> cat .hidden 
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$ </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit3@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000851effff">~/inhere</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We now have the password for user “bandit4”</rich_text>
+      <rich_text>
+
+</rich_text>
+    </node>
+    <node name="Level4-Level5" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604126931" ts_lastsave="1604130139">
+      <rich_text>=======================================Level5==================================
+
+#login as “bandit4”
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> ssh bandit4@bandit.labs.overthewire.org -p 2220
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit4@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www.">www.</rich_text>
+      <rich_text> `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (</rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef)">https://github.com/hugsy/gef)</rich_text>
+      <rich_text> in /usr/local/gef/
+    * pwndbg (</rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg)">https://github.com/pwndbg/pwndbg)</rich_text>
+      <rich_text> in /usr/local/pwndbg/
+    * peda (</rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git)">https://github.com/longld/peda.git)</rich_text>
+      <rich_text> in /usr/local/peda/
+    * gdbinit (</rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit)">https://github.com/gdbinit/Gdbinit)</rich_text>
+      <rich_text> in /usr/local/gdbinit/
+    * pwntools (</rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools)">https://github.com/Gallopsled/pwntools)</rich_text>
+      <rich_text>
+    * radare2 (</rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text>
+    * checksec.sh (</rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text> in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/">http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+  
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit4@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> 
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We are successfully connected to user “bandit4”</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Now the task is to search for a human-readable (ASCII) file in the “inhere” directory, Which contains password for user ”bandit5"</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text background="#ffff00000000">*NOTE: We've to look for Human-readable (ASCII) context. And they are dashed filename.</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit4@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> ls
+  -file00  -file02  -file04  -file06  -file08
+  -file01  -file03  -file05  -file07  -file09
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We've to check each file for Human-readable (ASCII) context</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#I've checked all the files but, it was kind of messy. But i found my ASCII context on “-file07”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit4@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>  cat ./-file07
+   koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit4@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Finally we got the password for user “bandit5”</rich_text>
+      <rich_text>
+
+
+
+
+
+
+
+
+
+
+
+
+</rich_text>
+    </node>
+    <node name="Level5-Level6" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604130179" ts_lastsave="1604130497">
+      <rich_text>==================================Level6=======================================
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Log in as “bandit5”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> ssh bandit5@bandit.labs.overthewire.org -p 2220 
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit5@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www.">www.</rich_text>
+      <rich_text> `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (</rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef)">https://github.com/hugsy/gef)</rich_text>
+      <rich_text> in /usr/local/gef/
+    * pwndbg (</rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg)">https://github.com/pwndbg/pwndbg)</rich_text>
+      <rich_text> in /usr/local/pwndbg/
+    * peda (</rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git)">https://github.com/longld/peda.git)</rich_text>
+      <rich_text> in /usr/local/peda/
+    * gdbinit (</rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit)">https://github.com/gdbinit/Gdbinit)</rich_text>
+      <rich_text> in /usr/local/gdbinit/
+    * pwntools (</rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools)">https://github.com/Gallopsled/pwntools)</rich_text>
+      <rich_text>
+    * radare2 (</rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text>
+    * checksec.sh (</rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text> in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/">http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+  
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit5@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We've successfully login as “bandit5”</rich_text>
+      <rich_text>
+
+</rich_text>
+    </node>
+  </node>
+</cherrytree>
