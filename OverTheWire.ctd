@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Over the Wire" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1604117783" ts_lastsave="1604130179">
+  <node name="Over the Wire" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1604117783" ts_lastsave="1604303994">
     <rich_text>Colour code in this file 
 </rich_text>
     <rich_text foreground="#ffffffff0000">yellow is for Comments</rich_text>
@@ -359,7 +359,7 @@ boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
 </rich_text>
     </node>
-    <node name="Level 1-Level2" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604119050" ts_lastsave="1604122822">
+    <node name="Level1-Level2" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604119050" ts_lastsave="1604242911">
       <rich_text>============================== Level 1==========================================
 </rich_text>
       <rich_text foreground="#ffffffff0000"># Log in as “bandit1”</rich_text>
@@ -530,8 +530,6 @@ CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 </rich_text>
       <rich_text foreground="#ffffffff0000">#We now have now password for “bandit2</rich_text>
       <rich_text>”
-
-
 
 </rich_text>
     </node>
@@ -924,7 +922,7 @@ pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 
 </rich_text>
     </node>
-    <node name="Level4-Level5" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604126931" ts_lastsave="1604130139">
+    <node name="Level4-Level5" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604126931" ts_lastsave="1604242891">
       <rich_text>=======================================Level5==================================
 
 #login as “bandit4”
@@ -1105,20 +1103,9 @@ irc.overthewire.org.
       <rich_text foreground="#ffffffff0000">#Finally we got the password for user “bandit5”</rich_text>
       <rich_text>
 
-
-
-
-
-
-
-
-
-
-
-
 </rich_text>
     </node>
-    <node name="Level5-Level6" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604130179" ts_lastsave="1604130497">
+    <node name="Level5-Level6" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604130179" ts_lastsave="1604238596">
       <rich_text>==================================Level6=======================================
 
 </rich_text>
@@ -1252,6 +1239,743 @@ irc.overthewire.org.
 </rich_text>
       <rich_text foreground="#ffffffff0000">#We've successfully login as “bandit5”</rich_text>
       <rich_text>
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Task is to find a file in “inhere” directory, with given properties:
+
+</rich_text>
+      <rich_text indent="4" foreground="#ffffffff0000">h</rich_text>
+      <rich_text foreground="#ffffffff0000">uman-readable
+</rich_text>
+      <rich_text indent="4" foreground="#ffffffff0000">1033 bytes in size </rich_text>
+      <rich_text foreground="#ffffffff0000">
+</rich_text>
+      <rich_text indent="4" foreground="#ffffffff0000">not executable</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit5@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> ls
+   </rich_text>
+      <rich_text background="#000000000000" foreground="#0000851effff">inhere</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit5@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> find . -readable -size 1033c 
+   ./inhere/maybehere07/.file2 
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit5@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> cat ./inhere/maybehere/.file2 
+    DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit5@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>
+ 
+ </rich_text>
+      <rich_text foreground="#ffffffff0000">#We've got password for user “bandit6”</rich_text>
+      <rich_text> 
+
+</rich_text>
+    </node>
+    <node name="Level6-Level7" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604238379" ts_lastsave="1604242874">
+      <rich_text>===============================Level7==========================================
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Login as “bandit6”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> ssh bandit6@bandit.labs.overthewire.org -p 2220 
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit6@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www.">www.</rich_text>
+      <rich_text> `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (</rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef)">https://github.com/hugsy/gef)</rich_text>
+      <rich_text> in /usr/local/gef/
+    * pwndbg (</rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg)">https://github.com/pwndbg/pwndbg)</rich_text>
+      <rich_text> in /usr/local/pwndbg/
+    * peda (</rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git)">https://github.com/longld/peda.git)</rich_text>
+      <rich_text> in /usr/local/peda/
+    * gdbinit (</rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit)">https://github.com/gdbinit/Gdbinit)</rich_text>
+      <rich_text> in /usr/local/gdbinit/
+    * pwntools (</rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools)">https://github.com/Gallopsled/pwntools)</rich_text>
+      <rich_text>
+    * radare2 (</rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text>
+    * checksec.sh (</rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text> in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/">http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit6@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>  
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We are successfully login as “bandit6”</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#Task is to find the password which is stored somewhere in the server (hidden maybe), which has following properties.
+</rich_text>
+      <rich_text indent="6" foreground="#ffffffff0000">Owned by user bandit7</rich_text>
+      <rich_text foreground="#ffffffff0000">
+</rich_text>
+      <rich_text indent="6" foreground="#ffffffff0000">Owned by group bandit6</rich_text>
+      <rich_text foreground="#ffffffff0000">
+</rich_text>
+      <rich_text indent="6" foreground="#ffffffff0000">33bytes in size </rich_text>
+      <rich_text>
+#We have to find it in root directoryin order to search whole server (bandit6) for single file. (You can enter root dirctory by using " cd / " command) 
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit6@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> cd / 
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit6@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">/</rich_text>
+      <rich_text>  find . -user bandit7 -group bandit6 -size 33c
+
+   </rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>   </rich_text>
+      <rich_text foreground="#ffffffff0000">#We got only file which we can accsess.</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit6@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">/</rich_text>
+      <rich_text> cat ./var/lib/dpkg/info/bandit7.password
+   HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit6@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">/</rich_text>
+      <rich_text> 
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We got the password for user “bandit7”</rich_text>
+      <rich_text>
+
+</rich_text>
+      <encoded_png char_offset="3879" justification="left" link="">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</encoded_png>
+    </node>
+    <node name="Level7-Level8" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604242967" ts_lastsave="1604302882">
+      <rich_text>=======================================Level8==================================
+
+#Login as “bandit7”
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> ssh bandit7@bandit.labs.overthewire.org -p 2220
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit7@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www.">www.</rich_text>
+      <rich_text> `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (</rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef)">https://github.com/hugsy/gef)</rich_text>
+      <rich_text> in /usr/local/gef/
+    * pwndbg (</rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg)">https://github.com/pwndbg/pwndbg)</rich_text>
+      <rich_text> in /usr/local/pwndbg/
+    * peda (</rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git)">https://github.com/longld/peda.git)</rich_text>
+      <rich_text> in /usr/local/peda/
+    * gdbinit (</rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit)">https://github.com/gdbinit/Gdbinit)</rich_text>
+      <rich_text> in /usr/local/gdbinit/
+    * pwntools (</rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools)">https://github.com/Gallopsled/pwntools)</rich_text>
+      <rich_text>
+    * radare2 (</rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text>
+    * checksec.sh (</rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text> in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/">http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit7@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We've successfully login as “bandit7”
+#Task is to find the password for user “bandit8”, which is in "data.txt" file. And is next to the word “millionth” .</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit7@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> ls
+  data.txt 
+  
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#There are many ways to do this either by sorting in 'dinctionary order' or using ‘notepad' to search a word form the file.
+but the simplest i konw is you can use grep command to look for the word. (entrire line will be printed)</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit7@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> grep millionth data.txt
+   millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit7@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000"># We now have the password for user “bandit8”</rich_text>
+      <rich_text> 
+</rich_text>
+    </node>
+    <node name="Level8-Level9" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604300254" ts_lastsave="1604303957">
+      <rich_text>====================================Level 9====================================
+
+#Log in as “bandit8”
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> ssh bandit8@bandit.labs.overthewire.org -p 2220 
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit8@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www.">www.</rich_text>
+      <rich_text> `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (</rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef)">https://github.com/hugsy/gef)</rich_text>
+      <rich_text> in /usr/local/gef/
+    * pwndbg (</rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg)">https://github.com/pwndbg/pwndbg)</rich_text>
+      <rich_text> in /usr/local/pwndbg/
+    * peda (</rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git)">https://github.com/longld/peda.git)</rich_text>
+      <rich_text> in /usr/local/peda/
+    * gdbinit (</rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit)">https://github.com/gdbinit/Gdbinit)</rich_text>
+      <rich_text> in /usr/local/gdbinit/
+    * pwntools (</rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools)">https://github.com/Gallopsled/pwntools)</rich_text>
+      <rich_text>
+    * radare2 (</rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text>
+    * checksec.sh (</rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text> in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/">http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit8@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We are successfully login as “bandit8”
+#Task is to find password in ‘data.txt’ file. and the text occurs only once, which means the text is unique (unrepeated)
+</rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit8@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> ls
+data.txt 
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit8@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> sort data.txt | uniq -u 
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+</rich_text>
+      <rich_text foreground="#ffffffff0000">
+/*Here in above command sort is arranging contants inside ‘data.txt’ in a dictinory order. Then we use pipe ( | ) to tranfer to another command which is ‘uniq’ (this will omit or remove all repeted lines ) and last i've use “-u” switch to print only unique line */</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit8@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> 
+
+</rich_text>
+      <rich_text foreground="#ffffffff0000">#We've the password for user “bandit9” </rich_text>
+      <rich_text>
+</rich_text>
+    </node>
+    <node name="Level9-Level10" unique_id="18" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1604303994" ts_lastsave="1604304152">
+      <rich_text>=========================================Level 10 ==============================
+
+# Log in as “bandit9”
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">root@kali</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#00000000ffff">#</rich_text>
+      <rich_text> ssh bandit9@bandit.labs.overthewire.org -p 2220 
+This is a OverTheWire game server. More information on </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames">http://www.overthewire.org/wargames</rich_text>
+      <rich_text>
+
+bandit9@bandit.labs.overthewire.org's password: 
+Linux bandit.otw.local 5.4.8 x86_64 GNU/Linux
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  </rich_text>
+      <rich_text link="webs http://www.">www.</rich_text>
+      <rich_text> `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to Steven or morla on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother. Files and directories with
+  easily guessable or short names will be periodically deleted!
+
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * gef (</rich_text>
+      <rich_text link="webs https://github.com/hugsy/gef)">https://github.com/hugsy/gef)</rich_text>
+      <rich_text> in /usr/local/gef/
+    * pwndbg (</rich_text>
+      <rich_text link="webs https://github.com/pwndbg/pwndbg)">https://github.com/pwndbg/pwndbg)</rich_text>
+      <rich_text> in /usr/local/pwndbg/
+    * peda (</rich_text>
+      <rich_text link="webs https://github.com/longld/peda.git)">https://github.com/longld/peda.git)</rich_text>
+      <rich_text> in /usr/local/peda/
+    * gdbinit (</rich_text>
+      <rich_text link="webs https://github.com/gdbinit/Gdbinit)">https://github.com/gdbinit/Gdbinit)</rich_text>
+      <rich_text> in /usr/local/gdbinit/
+    * pwntools (</rich_text>
+      <rich_text link="webs https://github.com/Gallopsled/pwntools)">https://github.com/Gallopsled/pwntools)</rich_text>
+      <rich_text>
+    * radare2 (</rich_text>
+      <rich_text link="webs http://www.radare.org/)">http://www.radare.org/)</rich_text>
+      <rich_text>
+    * checksec.sh (</rich_text>
+      <rich_text link="webs http://www.trapkit.de/tools/checksec.html)">http://www.trapkit.de/tools/checksec.html)</rich_text>
+      <rich_text> in /usr/local/bin/checksec.sh
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  </rich_text>
+      <rich_text link="webs http://www.overthewire.org/wargames/">http://www.overthewire.org/wargames/</rich_text>
+      <rich_text>
+
+  For support, questions or comments, contact us through IRC on
+  irc.overthewire.org #wargames.
+
+  Enjoy your stay!
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit9@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> 
+
+#We are log in as user “bandit9”
+#Task is
+
+</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">bandit9@bandit</rich_text>
+      <rich_text>:</rich_text>
+      <rich_text foreground="#0000ffff0000">~</rich_text>
+      <rich_text foreground="#ffff00000000">$</rich_text>
+      <rich_text> ls
+
+
 
 </rich_text>
     </node>
